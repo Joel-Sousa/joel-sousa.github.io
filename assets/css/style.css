@@ -1,0 +1,375 @@
+/*! 
+ * Designed with  by Xiaoying Riley for developers
+ * Template Name: Orbit - Bootstrap 4 Resume/CV Template for Developers
+ * Version: 2.0
+ * Author: Xiaoying Riley
+ * Copyright: 3rd Wave Media
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+
+:root {
+  --themeColor: #404448;
+  --nameColor: #fafbfc;
+  --descriptionColor: #ccc;
+  --black: #24292e;
+  --grey: #555;
+  --iceWhite: #f6f8fa;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.3s;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--black);
+  background: var(--iceWhite);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.wrapper {
+  background: var(--black);
+  max-width: 960px;
+  margin: 30px auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-wrapper {
+  background: var(--black);
+  position: absolute;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  color: white;
+}
+
+.sidebar-wrapper a {
+  color: white;
+}
+
+.sidebar-wrapper .profile-container {
+  padding: 30px;
+  background: var(--themeColor);
+  text-align: center;
+  color: var(--nameColor);
+}
+
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .tagline {
+  color: var(--descriptionColor);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 10px;
+}
+
+.sidebar-wrapper .profile {
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list .svg-inline--fa {
+  margin-right: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .contact-list .email .svg-inline--fa {
+  font-size: 16px;
+}
+
+.sidebar-wrapper .container-block {
+  padding: 15px 30px;
+}
+
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 3px 0;
+}
+
+.sidebar-wrapper .degree {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+.sidebar-wrapper .education-container {
+  margin-top: -25px;
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .education-container .meta {
+  color: var(--iceWhite);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sidebar-wrapper .education-container .time {
+  color: var(--iceWhite);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.sidebar-wrapper .education-container .item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-wrapper .languages-container .lang-desc {
+  color: var(--iceWhite);
+}
+
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+
+.main-wrapper {
+  background: white;
+  padding: 50px;
+  padding-right: 300px;
+}
+
+.main-wrapper .summary ul {
+  margin-left: -10px;
+}
+
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .section-title .icon-holder {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: var(--black);
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  top: -6px;
+}
+
+.main-wrapper .section-title .fas {
+  margin: -6px;
+  margin-bottom: -6px;
+  padding: 13px;
+}
+
+.main-wrapper .section-title .icon-holder .svg-inline--fa {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+i .section-title .fas {
+  top: -160px;
+}
+i .section-title .fab {
+  top: -16px;
+}
+
+.main-wrapper .section {
+  margin-bottom: 40px;
+}
+
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.main-wrapper .experience {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .job-title {
+  color: var(--black);
+  font-size: 15px;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.time {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.main-wrapper .company a {
+  margin-bottom: 10px;
+  color: var(--black);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.main-wrapper .projects-section .intro {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main-wrapper .projects-section .intro a {
+  color: var(--grey);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+
+.skills-section .footer {
+  padding: 30px;
+  padding-top: 30px;
+}
+
+.skills-section ul {
+  margin-left: -5px;
+  list-style-type: square;
+}
+
+.skills-section ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
+  }
+  .main-wrapper {
+    padding: 30px;
+  }
+  .main-wrapper .time {
+    position: static;
+    display: block;
+    margin-top: 5px;
+  }
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
+  }
+}
+
+#profile {
+  max-width: 125px;
+  max-height: 125px;
+  width: auto;
+  height: auto;
+}
+
+#name {
+  font-size: 23px;
+}
+
+.fas {
+  padding: 0 5px 0 0;
+}
+.fab {
+  padding: 0 5px 0 0;
+}
+
+.job-description ul {
+  margin-left: -10px;
+}
