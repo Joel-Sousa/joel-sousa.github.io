@@ -76,7 +76,7 @@ const GitProfile = ({ config }: { config: Config }) => {
           .map((project) => `+repo:${project}`)
           .join('');
 
-        const url = `https://api.github.com/search/repositories?q=${repos}&type=Repositories`;
+        const url = `https://api.github.com/search/repositories?q=${repos}+fork:true&type=Repositories`;
 
         const repoResponse = await axios.get(url, {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
@@ -230,19 +230,18 @@ const GitProfile = ({ config }: { config: Config }) => {
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
-                    {sanitizedConfig.educations.length !== 0 && (
-                      <EducationCard
-                        loading={loading}
-                        educations={sanitizedConfig.educations}
-                      />
-                    )}
                     {sanitizedConfig.certifications.length !== 0 && (
                       <CertificationCard
                         loading={loading}
                         certifications={sanitizedConfig.certifications}
                       />
                     )}
-                    
+                    {sanitizedConfig.educations.length !== 0 && (
+                      <EducationCard
+                        loading={loading}
+                        educations={sanitizedConfig.educations}
+                      />
+                    )}
                   </div>
                 </div>
                 <div className="lg:col-span-2 col-span-1">
